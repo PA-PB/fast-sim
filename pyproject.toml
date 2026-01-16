@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "pybind11>=2.10.0"]
+build-backend = "setuptools.build_meta"
+[tool.cibuildwheel]
+archs = ["auto64"]
+build = " cp311-* cp312-* cp313-* cp314-*"
+
+[tool.cibuildwheel.windows]
+before-build = "pip install pybind11"
