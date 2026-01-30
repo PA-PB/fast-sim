@@ -39,9 +39,9 @@ Since this project relies on high-performance C++ libraries, you must clone recu
 
 ```bash
 # 1. Clone the repository with submodules (for Eigen)
-git clone https://github.com/PA-PB/fast-spice-llc.git
+git clone https://github.com/PA-PB/fast-sim.git
+cd fast-sim
 git submodule update --init --recursive
-cd fast-spice-llc
 
 # 2. Build and Install (Compiles C++ backend)
 pip install . 
